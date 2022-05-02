@@ -1,0 +1,11 @@
+@import '../variables';
+
+.footer {
+    background-color: $secondaryColor;
+    color: #fff;
+    padding: 20px 10px;
+    font-size: 18px;
+    span {
+        color: $main-color;
+    }
+}

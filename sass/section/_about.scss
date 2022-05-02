@@ -1,0 +1,61 @@
+@import '../variables';
+
+.about {
+    padding-top: $sectionPadding;
+    padding-bottom: $sectionPadding;
+    &-content {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .image {
+            position: relative;
+            width: 250px;
+            height: 305px;
+            img {
+                height: inherit;
+                max-width: 100%;
+            }
+            &::before {
+                content: '';
+                background-color: $shapeColor;
+                position: absolute;
+                left: 0;
+                top: -40px;
+                width: 100px;
+                height: calc(100% + 80px);
+                z-index: -1;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                height: 70%;
+                width: 100px;
+                border-left: 80px solid $main-color;
+                border-bottom: 60px solid $main-color;
+                top: -20px;
+                right: -145px;
+                z-index: -1;
+            }
+        }
+        .text {
+            flex-basis: calc(100% - 500px);
+            p {
+                &:first-of-type {
+                    font-weight: 800;
+                    line-height: 1.8;
+                    margin-bottom: 20px;
+                }
+                &:last-of-type {
+                    color: $secondaryColor;
+                    line-height: 1.8;
+                }
+            }
+            hr {
+                width: 50%;
+                display: inline-block;
+                border-color: $main-color;
+            }
+        }
+    }
+}

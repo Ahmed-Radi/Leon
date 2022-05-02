@@ -1,0 +1,34 @@
+
+@import '../variables';
+
+.portfolio {
+    padding-top: $sectionPadding;
+    padding-bottom: $sectionPadding;
+    background-color: $backgroundColor;
+    &-content {
+        overflow: hidden;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        .card {
+            background-color: #fff;
+            img {
+                height: 250px;
+                width: 100%;
+                max-width: 100%;
+            }
+            .info {
+                padding: 20px;
+                h3 {
+                    margin: 0;
+                }
+                p {
+                    color: $secondaryColor;
+                    line-height: 1.8;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

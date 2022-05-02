@@ -1,0 +1,36 @@
+.contact {
+    background-color: $backgroundColor;
+    padding-top: $sectionPadding;
+    padding-bottom: $sectionPadding;
+    .info {
+        padding-top: $sectionPadding;
+        padding-bottom: $sectionPadding;
+        // text-align: center;
+        .label {
+            font-size: 40px;
+            letter-spacing: -2px;
+            font-weight: 800;
+            color: $shapeColor;
+        }
+        .link {
+            display: block;
+            font-size: 40px;
+            letter-spacing: -2px;
+            font-weight: 800;
+            color: $main-color;
+            text-decoration: none;
+            padding-bottom: 20px;
+            &::first-letter {
+                text-transform: capitalize;
+            }
+        }
+        .social {
+            font-size: 17px;
+            > a {
+                text-decoration: none;
+                color: $secondaryColor;
+                margin-left: 10px;
+            }
+        }
+    }
+}

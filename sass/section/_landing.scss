@@ -1,0 +1,42 @@
+@import '../variables';
+.landing {
+    background: url('../../assets/images/lading.webp');
+    background-size: cover;
+    min-height: calc(100vh - 64px);
+    position: relative;
+    & .landing__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h2 {
+            // animation: light 1s infinite alternate-reverse;
+            margin: 0 auto;
+            color: $main-color;
+            font-weight: 500;
+            font-size: 50px;
+            width: 300px;
+            max-width: 100%;
+        }
+        p {
+            font-size: 19px;
+            line-height: 1.8;
+        }
+    }
+}
+
+// @keyframes light {
+//     from {
+//         color: $main-color;
+//     }
+//     10% {
+//         color: rgb(0, 174, 0);
+//     }
+//     50% {
+//         color: rgb(5, 215, 5);
+//     }
+//     100% {
+//         color: $main-color;
+//     }
+// }

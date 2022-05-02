@@ -1,0 +1,17 @@
+@import '../variables';
+
+.special-heading {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 800;
+    color: $specialHeading-color;
+    letter-spacing: -8px;
+    text-align: center;
+    text-transform: capitalize;
+    + p {
+        margin: -40px 0 0;
+        color: #797979;
+        font-size: 20px;
+        text-align: center;
+    }
+}

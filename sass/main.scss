@@ -1,0 +1,27 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@import './components/header';
+@import './media';
+/* -End Global Rules- */
+@import './section/navbar';
+@import './section/landing';
+@import './section/feature';
+@import './section/services';
+@import './section/portfolio';
+@import './section/about';
+@import './section/contact';
+@import './section/footer';

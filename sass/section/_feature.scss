@@ -1,0 +1,28 @@
+@import '../variables';
+
+.feature {
+    padding-top: $sectionPadding;
+    padding-bottom: $sectionPadding;
+    background: $backgroundColor;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        .card {
+            padding: 20px;
+            text-align: center;
+            i {
+                color: $main-color;
+                font-size: 40px;
+            }
+            h3 {
+                font-weight: 800;
+            }
+            p {
+                line-height: 1.8;
+                color: $secondaryColor;
+                font-size: 17px;
+            }
+        }
+    }
+}
